@@ -20,7 +20,7 @@ function App() {
 
 	return (
 		<>
-			<h1>Stop Timer Project</h1>
+			<h1 className='text-lg'>Stop Timer Project</h1>
 			<div>
 				<span>{('0' + Math.floor((time / 60000) % 60)).slice(-2)}:</span>
 				<span>{('0' + Math.floor((time / 1000) % 60)).slice(-2)}:</span>
