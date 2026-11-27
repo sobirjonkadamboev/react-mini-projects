@@ -1,23 +1,22 @@
-import { useState, useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import './App.css'
 
 function App() {
 	const [time, setTime] = useState(0)
 	const [running, setRunning] = useState(false)
 
-  useEffect((){
-    let interval;
+	useEffect(() => {
+		let interval
 
-    if(running) {
-      interval = setInterval(() => {
-        setTime((prevTime) => prevTime + 10)
-      }, 10)
-    } else if(!running){
-      clearInterval(interval)
-    }
-    return () => clearInterval(interval)
-
-  })
+		if (running) {
+			interval = setInterval(() => {
+				setTime(prevTime => prevTime + 10)
+			}, 10)
+		} else if (!running) {
+			clearInterval(interval)
+		}
+		return () => clearInterval(interval)
+	})
 
 	return (
 		<>
