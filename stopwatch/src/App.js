@@ -39,7 +39,7 @@ function App() {
 						</button>
 					) : (
 						<button
-							className='border rounded py-2'
+							className='border rounded-lg py-1 px-2'
 							onClick={() => {
 								setRunning(true)
 							}}
