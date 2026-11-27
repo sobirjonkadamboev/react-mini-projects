@@ -5,7 +5,7 @@ function App() {
 	const [time, setTime] = useState(0)
 	const [running, setRunning] = useState(false)
 
-  useEffect(){
+  useEffect((){
     let interval;
 
     if(running) {
@@ -17,7 +17,7 @@ function App() {
     }
     return () => clearInterval(interval)
 
-  }
+  })
 
 	return (
 		<>
