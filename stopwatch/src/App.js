@@ -27,10 +27,10 @@ function App() {
 					<span>{('0' + Math.floor((time / 1000) % 60)).slice(-2)}:</span>
 					<span>{('0' + Math.floor((time / 10) % 100)).slice(-2)}</span>
 				</div>
-				<div className='flex flex-row justify-between'>
+				<div className='w-2/3 flex flex-row justify-between'>
 					{running ? (
 						<button
-							className='border'
+							className='border rounded-lg py-1 px-2'
 							onClick={() => {
 								setRunning(false)
 							}}
@@ -49,6 +49,7 @@ function App() {
 					)}
 
 					<button
+						className='border rounded-lg py-1 px-2'
 						onClick={() => {
 							setTime(0)
 						}}
