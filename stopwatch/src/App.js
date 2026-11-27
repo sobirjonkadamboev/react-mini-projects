@@ -21,8 +21,8 @@ function App() {
 	return (
 		<>
 			<div className='max-w-md flex flex-col items-center justify-center py-8'>
-				<h1 className='text-2xl font-semibold pb-2'>Stop Watch Project</h1>
-				<div className='text-xl font-semibold'>
+				<h1 className='text-2xl font-semibold'>Stop Watch Project</h1>
+				<div className='text-xl font-semibold py-2'>
 					<span>{('0' + Math.floor((time / 60000) % 60)).slice(-2)}:</span>
 					<span>{('0' + Math.floor((time / 1000) % 60)).slice(-2)}:</span>
 					<span>{('0' + Math.floor((time / 10) % 100)).slice(-2)}</span>
