@@ -12,6 +12,12 @@ function App() {
 				<span>{'0' + Math.floor((time / 1000) % 60)}:</span>
 				<span>{'0' + Math.floor((time / 10) % 100)}:</span>
 			</div>
+			<div>
+				<button>Start</button>
+			</div>
+			<div>
+				<button>Stop</button>
+			</div>
 		</>
 	)
 }
