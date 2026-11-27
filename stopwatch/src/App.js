@@ -27,20 +27,23 @@ function App() {
 				<span>{('0' + Math.floor((time / 10) % 100)).slice(-2)}</span>
 			</div>
 			<div>
-				<button
-					onClick={() => {
-						setRunning(true)
-					}}
-				>
-					Start
-				</button>
-				<button
-					onClick={() => {
-						setRunning(false)
-					}}
-				>
-					Stop
-				</button>
+				{running ? (
+					<button
+						onClick={() => {
+							setRunning(false)
+						}}
+					>
+						Stop
+					</button>
+				) : (
+					<button
+						onClick={() => {
+							setRunning(true)
+						}}
+					>
+						Start
+					</button>
+				)}
 
 				<button
 					onClick={() => {
