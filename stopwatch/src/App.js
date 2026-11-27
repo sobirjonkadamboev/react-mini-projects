@@ -20,8 +20,8 @@ function App() {
 
 	return (
 		<>
-			<div className='px-4'>
-				<h1 className='text-lg'>Stop Watch Project</h1>
+			<div className='max-w-md flex flex-col items-center justify-center py-8'>
+				<h1 className='text-2xl font-bold pb-2'>Stop Watch Project</h1>
 				<div>
 					<span>{('0' + Math.floor((time / 60000) % 60)).slice(-2)}:</span>
 					<span>{('0' + Math.floor((time / 1000) % 60)).slice(-2)}:</span>
