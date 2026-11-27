@@ -20,38 +20,40 @@ function App() {
 
 	return (
 		<>
-			<h1 className='text-lg'>Stop Watch Project</h1>
 			<div>
-				<span>{('0' + Math.floor((time / 60000) % 60)).slice(-2)}:</span>
-				<span>{('0' + Math.floor((time / 1000) % 60)).slice(-2)}:</span>
-				<span>{('0' + Math.floor((time / 10) % 100)).slice(-2)}</span>
-			</div>
-			<div>
-				{running ? (
-					<button
-						onClick={() => {
-							setRunning(false)
-						}}
-					>
-						Stop
-					</button>
-				) : (
-					<button
-						onClick={() => {
-							setRunning(true)
-						}}
-					>
-						Start
-					</button>
-				)}
+				<h1 className='text-lg'>Stop Watch Project</h1>
+				<div>
+					<span>{('0' + Math.floor((time / 60000) % 60)).slice(-2)}:</span>
+					<span>{('0' + Math.floor((time / 1000) % 60)).slice(-2)}:</span>
+					<span>{('0' + Math.floor((time / 10) % 100)).slice(-2)}</span>
+				</div>
+				<div>
+					{running ? (
+						<button
+							onClick={() => {
+								setRunning(false)
+							}}
+						>
+							Stop
+						</button>
+					) : (
+						<button
+							onClick={() => {
+								setRunning(true)
+							}}
+						>
+							Start
+						</button>
+					)}
 
-				<button
-					onClick={() => {
-						setTime(0)
-					}}
-				>
-					Restart
-				</button>
+					<button
+						onClick={() => {
+							setTime(0)
+						}}
+					>
+						Restart
+					</button>
+				</div>
 			</div>
 		</>
 	)
