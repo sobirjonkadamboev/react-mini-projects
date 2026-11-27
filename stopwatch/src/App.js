@@ -42,7 +42,13 @@ function App() {
 					Stop
 				</button>
 
-				<button onClick={() => {}}>Restart</button>
+				<button
+					onClick={() => {
+						setTime(0)
+					}}
+				>
+					Restart
+				</button>
 			</div>
 		</>
 	)
