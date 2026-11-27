@@ -16,7 +16,7 @@ function App() {
 			clearInterval(interval)
 		}
 		return () => clearInterval(interval)
-	})
+	}, [running])
 
 	return (
 		<>
