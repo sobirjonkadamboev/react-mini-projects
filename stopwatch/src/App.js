@@ -3,6 +3,7 @@ import './App.css'
 
 function App() {
 	const [time, setTime] = useState(0)
+	const [running, setRunning] = useState(false)
 
 	return (
 		<>
@@ -13,8 +14,13 @@ function App() {
 				<span>{'0' + Math.floor((time / 10) % 100)}:</span>
 			</div>
 			<div>
-				<button>Start</button>
-				<button>Stop</button>
+				<button
+					onClick={() => {
+						!setRunning
+					}}
+				>
+					Start
+				</button>
 				<button>Restart</button>
 			</div>
 		</>
