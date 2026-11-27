@@ -16,11 +16,19 @@ function App() {
 			<div>
 				<button
 					onClick={() => {
-						!setRunning
+						setRunning(true)
 					}}
 				>
 					Start
 				</button>
+				<button
+					onClick={() => {
+						setRunning(false)
+					}}
+				>
+					Stop
+				</button>
+				<span>{'0' + Math.floor((time / 60000) % 60)}:</span>
 				<button>Restart</button>
 			</div>
 		</>
