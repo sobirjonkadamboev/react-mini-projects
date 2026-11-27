@@ -14,9 +14,8 @@ function App() {
 			</div>
 			<div>
 				<button>Start</button>
-			</div>
-			<div>
 				<button>Stop</button>
+				<button>Restart</button>
 			</div>
 		</>
 	)
