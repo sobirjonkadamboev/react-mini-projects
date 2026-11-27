@@ -30,6 +30,7 @@ function App() {
 				<div className='flex flex-row justify-between'>
 					{running ? (
 						<button
+							className='border'
 							onClick={() => {
 								setRunning(false)
 							}}
@@ -38,6 +39,7 @@ function App() {
 						</button>
 					) : (
 						<button
+							className='border'
 							onClick={() => {
 								setRunning(true)
 							}}
