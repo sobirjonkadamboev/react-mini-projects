@@ -41,7 +41,7 @@ function App() {
 				>
 					Stop
 				</button>
-				<span>{'0' + Math.floor((time / 60000) % 60)}:</span>
+
 				<button onClick={() => {}}>Restart</button>
 			</div>
 		</>
